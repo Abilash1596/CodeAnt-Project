@@ -1,3 +1,4 @@
+Both Signin and Home page is available in this project for signin use /signin and for home it is in home page /
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
