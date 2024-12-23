@@ -1,0 +1,905 @@
+.sidebar {
+    width: 242px; /* Fixed width */
+    height: 960px; /* Fixed height */
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 0; /* No gap between items */
+    justify-content: space-between; /* Distribute items with space between them */
+    opacity: 1; /* Set visible; adjust this for transparency */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 10px; /* Inner spacing */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  }
+  
+  .brand-logo-container {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center logo and text vertically */
+    gap: 2px; /* Minimal spacing between logo and text */
+  }
+  
+  .brand-logo {
+    width: 122px; /* Width of the logo */
+    height: 26px; /* Height of the logo */
+  }
+  
+  .brand-name {
+    font-family: 'Satoshi', sans-serif; /* Font family */
+    font-size: 24px; /* Font size */
+    font-weight: 400; /* Font weight */
+    color: #181D27; /* Text color */
+    line-height: 26.4px; /* Line height */
+    margin-right: 50px; /* Adjust text alignment for proximity */
+    text-underline-position: from-font; /* Position underline */
+    text-decoration-skip-ink: none; /* Prevent ink skipping */
+    opacity: 1; /* Ensure visibility */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  /* Dropdown button */
+  .dropdown-container {
+    position: relative; /* To position dropdown list */
+  }
+  
+  .dropdown-button {
+    background: none;
+    border: 1px solid gray ;
+    font-size: 18px;
+    color: #181D27;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+    width: 90%;
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+  /* Dropdown menu container */
+  .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin-left: 35px;
+    position: absolute;
+    top: 60px; /* Position the dropdown below the button */
+    left: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
+    width: 490px;
+    border-radius: 4px;
+    border: none; /* Remove the border */
+    box-shadow: none; 
+    text-align: center;
+  }
+  
+  /* Hover effect for individual items in the dropdown */
+  .new11:hover{
+    background-color: #181D27;
+  }
+  
+  /* Sidebar List Item */
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between the icon and text */
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover {
+    background-color: #f0f0f0; /* Add hover effect */
+  }
+  
+  /* Styling for the icon */
+  .nav-icon {
+    font-size: 18px; /* Adjust icon size */
+    color: #181D27; /* Icon color */
+  }
+  .newimage>img 
+  {
+    background-color: black;
+  }
+  /* Styling for the text */
+  .nav-text {
+   
+    font-family: var(--Fontfamilyfont-family-body);
+    font-size: var(--Fontsizetext-md);
+    font-weight: 600;
+    line-height: var(--Lineheighttext-md);
+    margin-left: 10px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+  }
+  
+  .dropdown-menu li {
+    padding: 8px;
+    cursor: pointer;
+    color: #181D27;
+    text-align: center;
+    width: Fill (182px)px;
+  height: Hug (24px)px;
+  gap: var(--spacing-md);
+  opacity: 0px;
+  border: none; /* Remove the border from each item */
+  
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #1570EF; /* Light background on hover */
+    color: #FFFFFF;
+    border-radius: 10px;
+  }
+  
+  /* Navigation list styling */
+  ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 8px 0; /* Spacing between list items */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  ul li:hover {
+    color: #007bff; /* Change text color on hover */
+  }
+  
+  /* Bottom section logout button */
+  .bottom-section button {
+    background-color: #ff4d4d; /* Logout button color */
+    color: white; /* Button text color */
+    padding: 8px 12px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  .bottom-section button:hover {
+    background-color: #e60000; /* Darker color on hover */
+  }
+  .arrow {
+    font-size: 14px; /* Adjust arrow size */
+    transform: rotate(90deg); /* Rotate the right arrow (>) to point down */
+    transition: transform 0.3s ease; /* Smooth transition when rotating */
+  }
+  
+  /* Rotate the arrow when the dropdown is open */
+  .dropdown-button.active .arrow {
+    transform: rotate(-90deg); /* Rotate it back when the dropdown is open */
+  }
+  .aicode {
+    font-family: var(--Fontfamilyfont-family-body);
+    font-size: var(--Fontsizetext-md);
+    font-weight: 600;
+    line-height: var(--Lineheighttext-md);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-left: 10px; /* Adds space between the image and text */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+  }
+  .aicode1 {
+  
+  font-family: var(--Fontfamilyfont-family-body);
+  font-size: var(--Fontsizetext-md);
+  font-weight: 600;
+  line-height: var(--Lineheighttext-md);
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+    margin-left: 10px; /* Adds space between the image and text */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    color: #414651;
+  }
+  .aicode2 {
+  
+    
+  font-family: var(--Fontfamilyfont-family-body);
+  font-size: var(--Fontsizetext-md);
+  font-weight: 600;
+  line-height: var(--Lineheighttext-md);
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+    
+      margin-left: 10px; /* Adds space between the image and text */
+      white-space: nowrap; /* Prevent text from wrapping to the next line */
+      color: #414651;
+    }
+  
+  li {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically align the image and text */
+  }
+  
+  li img {
+    width: 20px; /* Adjust the size of the image */
+    height: 20px; /* Adjust the size of the image */
+  }
+  
+  /* styles.css */
+  .main {
+    width: 1198px;
+    height: 960px;
+    padding: 24px 0px 0px 0px;
+    gap: 8px;
+    opacity: 0;
+    background-color: #FAFAFA;
+  }
+  .new 
+  {
+    width: Fill (1,150px)px;
+  height: Hug (156px)px;
+  gap: var(--spacing-2xl);
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  
+  }
+  /* Parent container */
+  .container {
+    display: flex;
+    height: 100vh; /* Full height */
+    background-color: #f8f8f8; /* Page background color */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 242px; /* Fixed sidebar width */
+    height: 100%; /* Full height */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main content */
+  .main {
+    flex: 1; /* Take the remaining width */
+    padding: 25px;
+    gap: 8px;
+    background-color: #fafaFA;
+    opacity: 1; /* Ensure visibility */
+    
+  }
+  
+  /* Main content inner section */
+  .new {
+    width: 1150px;
+    height: auto;
+    gap: var(--spacing-2xl);
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: var(--Lineheightdisplay-xs);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    opacity: 1; /* Ensure visibility */
+    margin-left: 20px;
+  }
+  
+  .new1 {
+    /* Push elements to the ends */
+    align-items: center; /* Vertically align items */
+    width: 100%; /* Full width */
+  }
+  
+  .new2 {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #414651;
+    margin-left: 20px;
+  }
+  
+  .new-buttons {
+    background: none;
+    border: none;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1570EF; /* Button color */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between the icon and text */
+   
+  }
+  .anew
+  {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .new-buttons img {
+    width: 16px; /* Adjust size of the image */
+    height: 16px;
+  }
+  .new11{
+    font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #1570EF;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+  }
+  .search-box {
+    width: 100%;
+    max-width: 400px; /* Limit the maximum width */
+    padding: 10px 15px; /* Add padding for better spacing */
+    font-size: 16px; /* Adjust font size for readability */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for interactions */
+    outline: none; /* Remove default outline */
+    margin-left: 10px;
+  }
+  
+  .search-box:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Enhance shadow on focus */
+  }
+  
+  .search-box::placeholder {
+    color: #aaa; /* Light gray placeholder text */
+    font-style: italic; /* Italic placeholder for a stylish look */
+  }
+  .next1 
+  {
+    width: Fill (1,150px)px;
+  height: Hug (108px)px;
+  padding: 24px 0px 24px 0px;
+  gap: 12px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  
+  }
+  .next2 
+  {
+    width: Hug (414.5px)px;
+  height: Hug (60px)px;
+  padding: 0px 24px 0px 24px;
+  gap: 12px;
+  opacity: 0px;
+  
+  }
+  .next3{
+    font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #181D27;
+  }
+  .next4{
+    width: Hug (59px)px;
+  height: Hug (24px)px;
+  padding: var(--spacing-xxs) 10px var(--spacing-xxs) var(--spacing-md);
+  gap: var(--spacing-xs);
+  border-radius: 10px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: #B2DDFF;
+  margin-left: 10px;
+  color: #175CD3;
+  border: 1px solid #B2DDFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 41px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+  
+  }
+  .react 
+  {
+    font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: inline-flex;
+  align-items: center; 
+  
+  }
+  .dotnew {
+    width: 8px;
+    height: 8px;
+    background-color: #1570EF;
+    display: inline-block; /* Ensures the dot stays inline */
+    border-radius: 50%; /* Makes the dot circular */
+    margin-left: 4px; /* Optional: Space between "React" and the dot */
+  }
+  .next5{
+    font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 5px;
+  }
+  .next6 
+  {
+    padding-left: 15px;
+  }
+  .next7 {
+    font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 20px;
+  }
+  /* Sidebar.css */
+  
+  /* Sidebar Container */
+  /* Sidebar container */
+  .sidebar-container {
+    position: relative;
+  }
+  
+  /* Hamburger Button */
+  .hamburger {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 1001;
+    color: #333;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0; /* Always visible on desktop */
+    width: 250px;
+    height: 100%;
+    background-color: whitesmoke;
+    color: #fff;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .sidebar.open {
+    left: 0; /* Visible when open on mobile */
+  }
+  
+  /* Sidebar Links */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #575757;
+  }
+  
+  /* Media Query for Mobile */
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    /* Ensure the layout adapts to smaller screens */
+    .main {
+      padding: 15px; /* Adjust padding for mobile */
+      width: 100%; /* Full width */
+   
+    }
+  
+    /* Adjust .new section for mobile */
+    .new {
+      padding-top: 50px;
+      width: 100%; /* Full width on mobile */
+      font-size: 18px; /* Smaller font size on mobile */
+    }
+  
+    /* Make buttons and other elements fit better on mobile */
+    .new-buttons, .new11 {
+      font-size: 18px; /* Smaller text size */
+       /* Adjust padding */
+      width: 30%;
+    }
+  
+    /* Adjust search box for mobile */
+    .search-box {
+      margin-top: 10px;
+      width: 100%; /* Full width */
+      max-width: 350px; /* Make search box fit better */
+    }
+  
+    .next1 {
+      width: 100%; /* Full width */
+      padding: 20px 0; /* Adjust padding */
+    }
+    
+    /* Adjust .next2 for smaller screens */
+    .next2 {
+      width: 100%; /* Full width on mobile */
+      padding: 0 15px; /* Adjust padding for mobile */
+    }
+  
+    .next3, .next5, .next7 {
+      font-size: 14px; /* Smaller font sizes for mobile */
+    }
+  
+    /* Adjust .next4 button for mobile */
+    .next4 {
+      width: 80px; /* Make the button smaller */
+      height: 30px; /* Adjust height */
+    }
+  
+    /* Adjust spacing for smaller screens */
+    .next6 {
+      padding-left: 10px;
+    }
+  }
+  /* Basic reset for the container */
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 250px;
+    background-color:whitesmoke;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar .top-section {
+    padding: 20px;
+  }
+  
+  .sidebar .brand-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar .brand-logo {
+    width: 30px;
+    margin-right: 10px;
+    
+  }
+  
+  .sidebar .dropdown-container {
+    list-style: none;
+  }
+  
+  .sidebar .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .sidebar .bottom-section {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Main Content Styling */
+  .main {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Media Query for Desktop */
+  @media (min-width: 1024px) {
+    .container {
+      display: flex;
+    }
+  
+    .sidebar {
+      position: fixed;
+      transform: translateX(0); /* Sidebar is always visible on desktop */
+    }
+  
+    .main {
+      margin-left: 250px;
+    }
+  }
+  /* Basic reset for the container */
+  .container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row; /* Default layout for desktop (sidebar + main content) */
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    width: 250px;
+    background-color: whitesmoke;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar .top-section {
+    padding: 20px;
+  }
+  
+  .sidebar .brand-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar .brand-logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .sidebar .dropdown-container {
+    list-style: none;
+  }
+  
+  .sidebar .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar .bottom-section {
+  
+    bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .sidebar .dropdown-button{
+    width: 85%;
+  }
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Main Content Styling */
+  .main {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px); /* Main content takes up remaining space on desktop */
+    transition: margin-left 0.3s ease;
+  }
+  
+  /* Media Query for Mobile */
+  /* Media Query for Mobile (Smaller Screens) */
+  @media (max-width: 768px) {
+    /* Hide unwanted horizontal scroll on smaller screens */
+    body {
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+  
+    /* Show hamburger on smaller screens */
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      background: none;
+      border: none;
+      color: #000;
+      cursor: pointer;
+      z-index: 1001; /* Ensure hamburger is above other content */
+      position: absolute; /* Make hamburger icon position absolute */
+      top: 15px; /* Space from the top */
+      right: -375px; /* Align hamburger at the right corner */
+    }
+  
+    /* Full-width layout for main content */
+    .main {
+      width: 100%; /* Main content takes up full width */
+      margin-left: 0; /* No margin left when sidebar is hidden */
+      overflow: hidden;
+      transition: opacity 0.3s ease; /* Add a smooth transition effect */
+      height: 1024px;  
+    }
+  
+    /* When the sidebar is open, make main content transparent or hidden */
+    .sidebar.open ~ .main {
+      opacity: 0.1; /* Make content semi-transparent */
+      pointer-events: none; /* Disable interaction with the content */
+      background-color: #E9EAEB;
+    }
+  
+    /* Sidebar Styling */
+    .sidebar {
+      width: 450px;
+      position: fixed;
+      top: 0;
+      left: -250px; /* Sidebar hidden off-screen by default */
+      transition: left 0.3s ease;
+      overflow: hidden;
+      height: 456px;
+    }
+  
+    /* Move logo to the right on smaller screens */
+    .sidebar .brand-logo-container {
+      display: flex;
+      justify-content: center; /* Align the logo to the center */
+      padding-left: 10px; /* Space from the left edge */
+    }
+  
+    .sidebar.open {
+      left: 0; /* Show sidebar when open */
+    }
+  
+    /* Make sidebar menu and content responsive */
+    .sidebar .dropdown-menu li {
+      padding: 10px;
+    }
+  
+    /* Adjust buttons and other elements for mobile */
+    .new-buttons, .new11 {
+      font-size: 12px; /* Smaller text size */
+      padding: 8px 10px; /* Adjust padding */
+    }
+  
+    .search-box {
+      width: 100%; /* Full width */
+      max-width: 350px; /* Fit better on small screens */
+    }
+  
+    .next1 {
+      width: 100%; /* Full width */
+      padding: 20px 0; /* Adjust padding */
+    }
+  
+    .next2 {
+      width: 100%; /* Full width */
+      padding: 0 15px;
+    }
+  
+    .next3, .next5, .next7 {
+      font-size: 14px; /* Smaller font sizes for mobile */
+    }
+  
+    /* Adjust the "Public" button */
+    .next4 {
+      width: 80px;
+      height: 30px;
+    }
+    @media (max-width: 768px) {
+      .support {
+        display: flex; /* Align the text and image horizontally */
+        align-items: center; /* Vertically align items within the flex container */
+        justify-content: flex-start; /* Align content to the start */
+        margin-top: 15px; /* Add spacing between each item vertically */
+        padding-top: 22px;
+        margin-left: 20px; /* Add spacing on the left */
+        padding-right: 0; /* Remove unnecessary padding */
+        text-align: left; /* Align text to the left */
+        gap: 8px; /* Add space between the image and text */
+        clear: both; /* Ensure no floating elements interfere */
+      }
+      
+      /* Ensure parent container has proper spacing */
+      .sidebar .bottom-section {
+        display: block; /* Ensure elements stack vertically */
+        padding: 10px; /* Add some padding around the container */
+      }
+    
+      /* Add margin-bottom to ensure vertical spacing between items */
+      .bottom-section .support + .support {
+        margin-top: 15px; /* Adds vertical spacing between the items */
+      }
+    }
+    
+    
+  }
+  
+  /* Media Query for Desktop */
+  @media (min-width: 1024px) {
+    .container {
+      display: flex;
+    }
+  
+    /* Sidebar is always visible on desktop */
+    .sidebar {
+      position: fixed;
+      transform: translateX(0); /* Sidebar is always visible on desktop */
+    }
+  
+    /* Main content should have margin left to accommodate the sidebar */
+    .main {
+      margin-left: 250px;
+      width: 50px; 
+      overflow: hidden;
+    }
+  }
+  .support{
+   padding-right: 150px;
+  font-family: var(--Fontfamilyfont-family-body);
+  font-size: var(--Fontsizetext-md);
+  font-weight: 600;
+  line-height: var(--Lineheighttext-md);
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #414651;
+  }
